@@ -1,5 +1,6 @@
 
 // one function 5 input 
+// input function
 
 function getInputId(inputId) {
     const inputField = document.getElementById(inputId);
