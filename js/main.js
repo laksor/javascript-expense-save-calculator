@@ -54,14 +54,13 @@ document.getElementById('saving-btn').addEventListener('click', function (){
     const rent = getInputId('rent-input');
     // clothes
     const clothes = getInputId('cloth-input');
-
     // total Expenses
     const totalExpense = food + rent + clothes;
     // expense output
     const expense = document.getElementById('expense-output');
     expense.innerText = totalExpense;
 
-    // alert 
+    // alert bar
     if(income < totalExpense){
         const fail = document.getElementById('fail');
         fail.style.display = 'block';
@@ -92,7 +91,7 @@ document.getElementById('saving-btn').addEventListener('click', function (){
     remaining.innerText = totalRemaingBalance;
 });
 
-// alert 
+// alert for all input
 document.getElementById('income-input').addEventListener('keyup', function(event){
     const value = event.target.value;
     if (isNaN(value)) {
